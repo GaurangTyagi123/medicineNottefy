@@ -1,0 +1,62 @@
+[
+    {
+        "_id": 1,
+        "Shop_Name": "Jan Aushadhi Kendra",
+        "Medicines": [
+            {
+                "Gord": 1,
+                "Price" : 35,
+                "perPack" : 10,
+                "perDay" : 1
+            },
+            {
+                "Glycimet": 2,
+                "Price" : 11,
+                "perPack" : 10,
+                "perDay" : 2
+            },
+            {
+                "Levipil": 3,
+                "Price" : 68,
+                "perPack" : 10,
+                "perDay" : 2
+            },
+            {
+                "Covid": 4,
+                "Price" : 30,
+                "perPack" : 15,
+                "perDay" : 2
+            },
+            {
+                "Somazina": 5,
+                "Price" : 221,
+                "perPack" : 10,
+                "perDay" : 2
+            },
+            {
+                "A-to-Z": 6,
+                "Price" : 50,
+                "perPack" : 15,
+                "perDay" : 1
+            },
+            {
+                "Mecofol Plus": 7,
+                "Price" : 72,
+                "perPack" : 10,
+                "perDay" : 1
+            }
+        ]
+    },
+    {
+        "_id": 2,
+        "Shop_Name": "Standard Chemist",
+        "Medicines": [
+            {
+                "Rozustat": 8,
+                "Price" : 250,
+                "perPack" : 10,
+                "perDay" : 1
+            }
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600">
+    <title>Kavita Tyagi</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="https://lh3.googleusercontent.com/pw/ABLVV87KqahYJ1UNRAczs30Tiw774PaZDHLhSJKnG27Gm3YIZGspVNUxchO3J4mWVpCZXqF45wbR5upi7K2EC1FRs9MfWSRwltBlzIevI1hFdrBj5J2RRG4-4kzNOh0akg6MwPP73XRlhoVIwjOlY62bRXXUxt_9bwQJGts6jBHUbIqv3gWNwZubblYHPlms5If1tdHE-tvbHfJsERZ7mBwLqEBkR8pWA7F08v7xM5wFZ0hhCOse55P3k33CXAtv4r7N_TZySOBRJ-n2mUUx7MM0fBI7pPWo2wCRUEPF8yrEI2Qz1IrrZ-6nUbvydT0jjg3nzL8i-8zWyAQvUsrWoZ6URfNEsQqU2M9kCUVSPpTzM0ZZmCftTfpNJ1bk-7MP8dcvCDJuUEVZvPWuM1aPmGjmi__vK2PGwvrpHYgqTKE_yPLB0t6ZnH1P9LLgN9kXwZmDor3vJBI6pX7diLVkB8Z14Y16VmdmlEOx4GpvOeM2680ICO6HyfYrRWBBEhCTBf8QFHq4LcRG3-t8WBYYbMWJPabbDyIXB5mV0noniRWJHUxKWvZyduUT3Lz89O0QmlYH5pU9W_fRK48_Y5QpxFxfXK0pzHuZOQnbSyjL3AJgdxNe3YYTmh1rBNRqq9ljPEmPXmFHMhx324vTllkMeqqdxo9TwkjRcoL4uxOfENEP0qLaNEdLaJoZbaFJq6EmBCbcYGgi_NMKnvbyLVGwh5XIVuo_6I4qICIXUVY3cap5uafK9qoiI1LznDsaocBwaWzX1QwHdAYXOa3LtVrcw4G4-9HWpNS7MGM3_3zcHYoQEY2B5R4K5IR-y6ZnTNyLc482bg6ROmlM3UY_BYd8J2Sh2kA1YI8PVmWSb_rvFKvfJmfMZ_N6ME_IPsyQRO-_Ad-95r31PTIZmYUx1Qsh9Hna6pggmtWI4hekFGtihsdPUcCxrclvi6OzJI_3hji9EUO9pv6yW9YTJw=w494-h878-s-no-gm?authuser=1" alt="background photo" class="bg_pic"> -->
+        <img src="https://source.unsplash.com/random" alt="background photo" class="bg_pic">
+        <div class="cards">
+            <div class="card">
+                <span>
+                    <figure class="art art--1"></figure>
+                    <h2 class="heading2">Medicine List</h2>
+                    <p class="date" id="real_date">Date</p>
+                    <a href="#hid" class="btn" id="btn-1">Get List</a>
+                </span>
+            </div>
+            <div class="card">
+                <span>
+                    <figure class="art art--2"></figure>
+                    <h2 class="heading2">Shop list</h2>
+                    <p class="date">Choose shops</p>
+                    <a href="#" class="btn">Select Shops</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="hid" data-hidden="true">
+        <table class="table" id="table" border="1">
+            <tr>
+                <th>Medicines</th>
+                <th>Cost</th>
+                <th>Quantity Left</th>
+            </tr>
+
+        </table>
+        <div class="days">
+            <label for="days">Days</label>
+            <input type="number" name="days" id="days" value="30">
+        </div>
+        <a href="#hid1" id="btn3">Calculate for next 30 days</a>
+    </div>
+    <div class="hidden" id="hid1" data-hidden="true">
+        <table class="table" id="res" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Needed</th>
+                <th>Price</th>
+            </tr>
+        </table>
+        <div class="result">
+            <p id="cost">Total Cost</p>
+            <p id="last">Last Date</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
