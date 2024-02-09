@@ -7,6 +7,7 @@ import cron from "node-cron"
 
 const app = express()
 app.use(cors())
+app.use(express.static("./"))
 app.use(express.urlencoded({ extended: false }))
 
 let flag = false;
@@ -36,7 +37,7 @@ app.get("/", (req, res) => {
     data.forEach(ele => {
         temp.push(ele.Medicines)
     })
-    res.header({'content-type':"application/json"})
+    res.header({ 'content-type': "application/json" })
     res.status(200).json(temp)
 })
 app.post("/getList", (req, res) => {
