@@ -67,7 +67,7 @@ app.post("/getList", (req, res) => {
 
 app.listen(5000);
 
-cron.schedule("0 0 */28 * *", () => {
+cron.schedule("* * * * * *", () => {
     if (flag) {
         let msg = notifyUser();
         console.log(msg.messageId)
@@ -75,3 +75,11 @@ cron.schedule("0 0 */28 * *", () => {
     }
     
 })
+// cron.schedule("0 0 */28 * *", () => {
+//     if (flag) {
+//         let msg = notifyUser();
+//         console.log(msg.messageId)
+//         flag = false;
+//     }
+    
+// })
