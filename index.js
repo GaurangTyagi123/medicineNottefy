@@ -16,7 +16,7 @@ const getData = async () => {
     let table = $("#table")
     response.forEach(shop => {
         shop.forEach((medicine, index) => {
-            let cost = Object.values(medicine)[0]
+            let cost = Object.values(medicine)[1]
             let key = Object.keys(medicine)[0]
 
             let tr = document.createElement("tr")
