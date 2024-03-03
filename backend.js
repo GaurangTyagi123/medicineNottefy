@@ -46,15 +46,14 @@ app.post("/getList", (req, res) => {
         let data = fs.readFileSync("shops.json",{encoding:"utf-8"})
         data = JSON.parse(data)
         let daysLeft = []
+        let iter = 0;
         data.forEach((shops) => {
-            const {Medicines} = shops
+            const { Medicines } = shops
             Medicines.forEach((med, index) => {
                 const {perPack,perDay,Price} = med
-                let left = (Math.round(days - (parseInt(ammountLeft[index]) / perDay)))
+                let left = (Math.round(days - (parseInt(ammountLeft[iter++]) / perDay)))
                 let needed = left * perDay
-                console.log(needed)
                 needed = Math.ceil(needed / perPack)
-
                 let name = Object.keys(med)[0]
                 daysLeft.push({name,needed,price:needed*parseInt(Price)})
             })
