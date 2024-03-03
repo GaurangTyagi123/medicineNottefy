@@ -52,6 +52,7 @@ app.post("/getList", (req, res) => {
                 const {perPack,perDay,Price} = med
                 let left = (Math.round(days - (parseInt(ammountLeft[index]) / perDay)))
                 let needed = left * perDay
+                console.log(needed)
                 needed = Math.ceil(needed / perPack)
 
                 let name = Object.keys(med)[0]
