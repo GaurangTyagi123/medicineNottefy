@@ -11,7 +11,7 @@ btn1.on("click", e => {
     getData()
 })
 const getData = async () => {
-    let response = await fetch("https://medicine-noteffy.onrender.com", { method: "GET" });
+    let response = await fetch("http://localhost:5000", { method: "GET" });
     response = await response.json()
     let table = $("#table")
     response.forEach(shop => {
@@ -38,7 +38,7 @@ const getData = async () => {
             data.push(ele.value)
         })
         let newData = new URLSearchParams({ d: data, days: days.val() })
-        let response = await fetch("https://medicine-noteffy.onrender.com/getList", { method: "POST", body: newData })
+        let response = await fetch("http://localhost:5000/getList", { method: "POST", body: newData })
         response = await response.json()
         let sum = 0;
         const tab = $("#res")[0]

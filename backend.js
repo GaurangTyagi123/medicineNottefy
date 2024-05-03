@@ -67,11 +67,11 @@ app.post("/getList", (req, res) => {
 
 app.listen(5000);
 
-cron.schedule("0 0 */1 * *", () => {
-    if (flag) {
-        let msg = notifyUser();
-        console.log(msg.messageId)
-        flag = false;
-    }
+// cron.schedule("0 0 */1 * *", () => {
+//     if (flag) {
+//         let msg = notifyUser();
+//         console.log(msg.messageId)
+//         flag = false;
+//     }
     
-})
+// })
